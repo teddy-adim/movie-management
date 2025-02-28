@@ -29,7 +29,7 @@ const Home = () => {
     <div className="hero-featured-container">
     <section className="hero">
       <h2>Black & White Cinema</h2>
-      <p>Mix & Match 2 for $9.99</p>
+      <p>Mix & Match 2 for $9.97</p>
     </section>
 
     <section className="featured-movies">
