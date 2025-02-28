@@ -27,10 +27,8 @@ const Home = () => {
 
   return (
     <div className="hero-featured-container">
-    <section className="hero">
-      <h2>Black & White Cinema</h2>
-      <p>Mix & Match 2 for $9.97</p>
-    </section>
+    
+
 
     <section className="featured-movies">
       <h2>Featured Movies & TV Shows</h2>

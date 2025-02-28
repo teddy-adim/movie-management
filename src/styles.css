@@ -52,22 +52,47 @@ a:hover {
 
 /* Hero Section */
 .hero {
+  height: 350px;
   text-align: center;
   background: linear-gradient(to right, #4b6cb7, #182848);
-  padding: 50px 20px;
+  color: white;
+  padding: 20px 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-overlay h2 {
+  font-size: 1.5rem;
+}
+
+.hero-overlay p {
+  font-size: 1rem;
 }
 
 .movie-carousel {
+  width: 80%;
+  max-width: 800px;
+  max-height: 250px;
+  margin: 10px auto;
   display: flex;
-  overflow-x: auto;
-  gap: 15px;
-  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
-.movie-carousel img {
-  width: 150px;
-  height: auto;
+.carousel-image {
+  height: 100%;
+  max-height: 250px;
+  width: 600px;
+  object-fit: cover;
   border-radius: 10px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.movie-title {
+  font-size: 1.2rem;
+  color: #ffd700;
+  margin-top: 5px;
 }
 
 /* Movie Listing Page */
