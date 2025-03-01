@@ -43,7 +43,9 @@
         "poster": "https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_.jpg",
         "synopsis": "The Avengers assemble once more to undo the catastrophic damage caused by Thanos.",
         "rent_price": "5.99",
-        "buy_price": "19.99"
+        "buy_price": "19.99",
+        "type": "movie"
+        
       },
       {
         "id": 6,
@@ -51,7 +53,8 @@
         "poster": "https://m.media-amazon.com/images/M/MV5BZWMyYzFjYTYtNTRjYi00OGExLWE2YzgtOGRmYjAxZTU3NzBiXkEyXkFqcGdeQXVyMzQ0MzA0NTM@._V1_.jpg",
         "synopsis": "Spider-Man's identity is revealed, leading him to seek help from Doctor Strange.",
         "rent_price": "4.49",
-        "buy_price": "14.99"
+        "buy_price": "14.99",
+        "type": "movie"
       },
       {
         "id": 7,
@@ -59,7 +62,8 @@
         "poster": "https://m.media-amazon.com/images/M/MV5BNGVjNWI4ZGUtNzE0MS00YTJmLWE0ZDctN2ZiYTk2YmI3NTYyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg",
         "synopsis": "The origin story of the Joker, a mentally troubled comedian who turns to a life of crime.",
         "rent_price": "3.99",
-        "buy_price": "12.99"
+        "buy_price": "12.99",
+        "type": "movie"
       },
       {
         "id": 8,
@@ -67,7 +71,8 @@
         "poster": "https://m.media-amazon.com/images/M/MV5BMTg1MTY2MjYzNV5BMl5BanBnXkFtZTgwMTc4NTMwNDI@._V1_.jpg",
         "synopsis": "T'Challa returns home to Wakanda to assume his place as king but faces challenges from enemies.",
         "rent_price": "4.99",
-        "buy_price": "16.99"
+        "buy_price": "16.99",
+        "type": "movie"
       },
       {
         "id": 9,
@@ -75,7 +80,8 @@
         "poster": "https://m.media-amazon.com/images/M/MV5BN2FjNmEyNWMtYzM0ZS00NjIyLTg5YzYtYThlMGVjNzE1OGViXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg",
         "synopsis": "A noble family becomes embroiled in a war for control over the desert planet Arrakis.",
         "rent_price": "4.99",
-        "buy_price": "17.99"
+        "buy_price": "17.99",
+        "type": "movie"
       },
       {
         "id": 10,
@@ -83,7 +89,8 @@
         "poster": "https://m.media-amazon.com/images/M/MV5BNDIzMTk4NDYtMjg5OS00ZGI0LWJhZDYtMzdmZGY1YWU5ZGNkXkEyXkFqcGdeQXVyMTI5NzUyMTIz._V1_.jpg",
         "synopsis": "A group of intergalactic criminals must pull together to stop a fanatical warrior.",
         "rent_price": "4.99",
-        "buy_price": "14.99"
+        "buy_price": "14.99",
+        "type": "movie"
       },
       {
         "id": 11,
@@ -91,7 +98,8 @@
         "poster": "https://m.media-amazon.com/images/M/MV5BYjhiNjBlODctY2ZiOC00YjVlLWFlNzAtNTVhNzM1YjI1NzMxXkEyXkFqcGdeQXVyMjQxNTE1MDA@._V1_.jpg",
         "synopsis": "Jake Sully and Neytiri must protect their family as a new threat emerges on Pandora.",
         "rent_price": "5.49",
-        "buy_price": "18.99"
+        "buy_price": "18.99",
+        "type": "movie"
       },
       {
         "id": 12,
@@ -99,7 +107,8 @@
         "poster": "https://m.media-amazon.com/images/M/MV5BNWM0ZGJlMzMtZmYwMi00NzI3LTgzMzMtNjMzNjliNDRmZmFlXkEyXkFqcGdeQXVyMTM1MTE1NDMx._V1_.jpg",
         "synopsis": "Doctor Strange explores the Multiverse to confront a new, powerful adversary.",
         "rent_price": "4.99",
-        "buy_price": "15.99"
+        "buy_price": "15.99",
+        "type": "movie"
       }
     ]
   ,

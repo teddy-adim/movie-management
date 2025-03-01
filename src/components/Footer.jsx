@@ -18,7 +18,7 @@ const Footer = () => {
         <div className="footer-section">
           <h4>My Account</h4>
           <ul>
-            <li><Link to="/account">My Vudu</Link></li>
+            <li><Link to="/account">My Tedflix</Link></li>
             <li><Link to="/settings">Settings</Link></li>
             <li><Link to="/devices">Manage Devices</Link></li>
           </ul>

@@ -28,10 +28,8 @@ const Home = () => {
   return (
     <div className="hero-featured-container">
     
-
-
     <section className="featured-movies">
-      <h2>Featured Movies & TV Shows</h2>
+      <h2>Featured Movies</h2>
       <div className="movie-grid">
         {movies.map((movie) => (
           <div key={movie.id} className="movie-item">
@@ -54,7 +52,6 @@ const Home = () => {
           ))}
         </div>
       </section>
-
   </div>
   );
 };

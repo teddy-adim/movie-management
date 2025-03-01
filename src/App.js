@@ -8,15 +8,22 @@ import Footer from "./components/Footer";
 import Login from "./components/Login";
 import Registration from "./components/Registration";
 import Hero from "./components/Hero";
+import SpotlightBanner from "./components/Spotlight";
 import "./styles.css";
 
 const App = () => {
   return (
     <Router>
       <Header />
-      <Hero/>
+      
       <Routes>
-        <Route path="/" element={<Home />} />
+      <Route path="/" element={
+          <>
+             <Hero/>
+            <Home />
+            <SpotlightBanner /> 
+          </>
+        } />
         <Route path="/movies" element={<Movies />} />
         <Route path="/MovieDetails/:id" element={<MovieDetails />} />
         <Route path="/login" element={<Login />} />

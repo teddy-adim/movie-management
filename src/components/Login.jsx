@@ -18,7 +18,7 @@ const Login = () => {
             <input type="checkbox" id="terms" required />
             <label htmlFor="terms">I certify that I am at least 18 years old and agree to the <Link to="/terms">Terms and Policies</Link> and <Link to="/privacy">Privacy Policy</Link>.</label>
           </div>
-          <button type="submit" className="button">Sign Up</button>
+          <button type="submit" className="button">Login</button>
         </form>
         <div className="social-login">
           <button className="social-button walmart-button">Walmart</button>
