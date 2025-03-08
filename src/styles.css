@@ -32,6 +32,11 @@ a:hover {
   align-items: center;
   background-color: #1f1f1f;
   padding: 15px 30px;
+   position: relative;
+  width: 100%; 
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
 .logo {
@@ -45,56 +50,148 @@ a:hover {
 }
 
 .nav-link {
-  color: white;
   text-decoration: none;
+  color: white;
   font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s;
+  margin-right: 30px;
 }
 
-/* Hero Section */
-.hero {
-  height: 350px;
-  text-align: center;
-  background: linear-gradient(to right, #4b6cb7, #182848);
+.nav-link:hover {
+  color: #3a506b;
+}
+
+/* ✅ Hamburger Menu Button (Hidden on Large Screens) */
+.menu-button {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
   color: white;
-  padding: 20px 10px;
+  cursor: pointer;
+  position: absolute;
+  right: 60px;
+  bottom: 10px
+}
+
+.hero {
+  height: 450px; /* Slightly taller to accommodate larger images */
+  text-align: center;
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #7b4397 100%);
+  color: white;
+  padding: 10px;
   position: relative;
   overflow: hidden;
-}
-
-.hero-overlay h2 {
-  font-size: 1.5rem;
-}
-
-.hero-overlay p {
-  font-size: 1rem;
-}
-
-.movie-carousel {
-  width: 80%;
-  max-width: 800px;
-  max-height: 250px;
-  margin: 10px auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+  flex-direction: column;
 }
 
-.carousel-image {
+.hero h2 {
+  font-size: 2rem;
+  margin-top: 5px;
+  margin-bottom: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Take up all available space in the hero section */
+.movie-slider {
+  flex: 1;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.slick-slider, .slick-list, .slick-track {
   height: 100%;
-  max-height: 250px;
-  width: 600px;
-  object-fit: cover;
-  border-radius: 10px;
-  transition: transform 0.5s ease-in-out;
+}
+
+.slick-slide {
+  height: 100%;
+}
+
+.slick-slide > div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide-item {
+  height: 100%;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+/* Make images MUCH larger */
+.carousel-image {
+  height: 320px !important; /* Much taller image */
+  max-height: 320px !important;
+  width: auto !important;
+  max-width: none !important; /* Remove width restrictions */
+  object-fit: contain !important; /* Ensure full poster is visible */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
 }
 
 .movie-title {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: #ffd700;
-  margin-top: 5px;
+  margin-top: 10px;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
+/* Customize dots position to avoid overlapping with content */
+.slick-dots {
+  bottom: -35px;
+}
+
+.slick-dots li button:before {
+  color: white;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #ffd700;
+}
+
+/* Make sure arrows are visible */
+.slick-prev,
+.slick-next {
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+.slick-prev {
+  left: 10px;
+}
+
+.slick-next {
+  right: 10px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 20px;
+}
 /* Content Section */
 /* Main container styles */
 .spotlight-container {
@@ -358,11 +455,33 @@ a:hover {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .nav-bar {
-    flex-direction: column;
-    gap: 10px;
+  @media screen and (max-width: 768px) {
+    .menu-button {
+      display: block;
+    }
+  
+    .nav-bar {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background: #222;
+      width: 200px;
+      text-align: center;
+      padding: 15px;
+      border-radius: 5px;
+    }
+  
+    .nav-bar.show {
+      display: flex;
+    }
+  
+    .nav-link {
+      display: block;
+      padding: 10px 0;
+    }
   }
-
   .movie-grid {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }

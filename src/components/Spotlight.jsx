@@ -36,12 +36,12 @@ const SpotlightExample = () => {
     type: 'actor',
     title: "ACTOR'S SPOTLIGHT",
     items: [
-      { image: "/placeholder1.jpg", title: "Actor 1" },
-      { image: "/placeholder2.jpg", title: "Actor 2" },
-      { image: "/placeholder3.jpg", title: "Actor 3" },
-      { image: "/placeholder4.jpg", title: "Actor 4" },
-      { image: "/placeholder5.jpg", title: "Actor 5" },
-      { image: "/placeholder6.jpg", title: "Actor 6" },
+      { image: "./images/placeholder1.jpg", title: "Actor 1" },
+      { image: "images/placeholder2.jpg", title: "Actor 2" },
+      { image: "images/placeholder3.jpeg", title: "Actor 3" },
+      { image: "images/placeholder4.jpeg", title: "Actor 4" },
+      { image: "images/placeholder5.jpeg", title: "Actor 5" },
+      { image: "images/placeholder6.jpeg", title: "Actor 6" },
     ]
   };
   
@@ -51,12 +51,12 @@ const SpotlightExample = () => {
     title: "CINEMA SPOTLIGHT",
     price: "5.99",
     items: [
-      { image: "/movie1.jpg", title: "Postcard Killings" },
-      { image: "/movie2.jpg", title: "Pale Door" },
-      { image: "/movie3.jpg", title: "Miss Fisher" },
-      { image: "/movie4.jpg", title: "Tomahawk" },
-      { image: "/movie5.jpg", title: "Mandy" },
-      { image: "/movie6.jpg", title: "Color Out Of Space" },
+      { image: "images/movies1.jpeg", title: "Postcard Killings" },
+      { image: "images/movies2.jpeg", title: "Pale Door" },
+      { image: "images/movies3.jpeg", title: "Miss Fisher" },
+      { image: "images/movies4.jpeg", title: "Tomahawk" },
+      { image: "images/movies5.jpeg", title: "Mandy" },
+      { image: "images/movies6.jpeg", title: "Color Out Of Space" },
     ]
   };
   
