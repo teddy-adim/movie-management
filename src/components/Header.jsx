@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "../styles.css"; // Ensure this is linked to your main CSS file
-import { FaBars, FaTimes } from "react-icons/fa"; // Hamburger and Close icons
+import "../styles.css"; 
+import { FaBars, FaTimes } from "react-icons/fa"; 
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -20,6 +20,7 @@ const Header = () => {
       {/* Navigation Menu */}
       <nav className={`nav-bar ${menuOpen ? "show" : ""}`}>
         <Link to="/movies" className="nav-link">Movies</Link>
+        <Link to="/tvshows" className="nav-link">TV Shows</Link>
         <Link to="/register" className="nav-link">Register</Link>
         <Link to="/login" className="nav-link">Login</Link>
       </nav>

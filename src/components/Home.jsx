@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import axios from "axios";
 import "../styles.css";
 
@@ -34,7 +35,9 @@ const Home = () => {
         {movies.map((movie) => (
           <div key={movie.id} className="movie-item">
             <img src={movie.poster} alt={movie.title} className="movie-poster" />
-            <p>{movie.title}</p>
+             <Link to={`/MovieDetails/${movie.id}?type=${movie.type}`}>
+             <p>{movie.title}</p>
+             </Link>
           </div>
         ))}
       </div>
@@ -47,7 +50,9 @@ const Home = () => {
           {tvShows.map((show) => (
             <div key={show.id} className="movie-item">
               <img src={show.poster} alt={show.title} className="movie-poster" />
-              <p>{show.title}</p>
+              <Link to={`/MovieDetails/${show.id}?type=${show.type}`}>
+             <p>{show.title}</p>
+             </Link>
             </div>
           ))}
         </div>

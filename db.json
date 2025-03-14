@@ -2,6 +2,42 @@
   
     "movies": [
       {
+        "id": 7,
+        "title": "Oppenheimer",
+        "poster": "https://m.media-amazon.com/images/M/MV5BN2JkMDc5MGQtZjg3YS00NmFiLWIyZmQtZTJmNTM5MjVmYTQ4XkEyXkFqcGc@._V1_SX300.jpg",
+        "synopsis": "The story of J. Robert Oppenheimer, the physicist behind the atomic bomb.",
+        "rent_price": "5.99",
+        "buy_price": "19.99",
+        "type": "movie"
+      },
+      {
+        "id": 8,
+        "title": "Barbie",
+        "poster": "https://m.media-amazon.com/images/M/MV5BYjI3NDU0ZGYtYjA2YS00Y2RlLTgwZDAtYTE2YTM5ZjE1M2JlXkEyXkFqcGc@._V1_SX300.jpg",
+        "synopsis": "Barbie embarks on an adventure to the real world after being expelled from Barbieland.",
+        "rent_price": "4.99",
+        "buy_price": "18.99",
+        "type": "movie"
+      },
+      {
+        "id": 9,
+        "title": "Aquaman: King of Atlantis",
+        "poster": "https://m.media-amazon.com/images/M/MV5BYjQ1ZTUzMWMtY2VkNS00ZDRjLWEwODYtYmFkMWJiNTQxMDUzXkEyXkFqcGc@._V1_SX300.jpg",
+        "synopsis": "Alongside trusted allies Mera and Vulko, King Aquaman faces unscrupulous surface dwellers, ancient evils from beyond time, and his half-brother's attempts to overthrow him all to prove that he's the right man for the throne!",
+        "rent_price": "6.99",
+        "buy_price": "21.99",
+        "type": "movie"
+      },
+      {
+        "id": 10,
+        "title": "Creed III",
+        "poster": "https://m.media-amazon.com/images/M/MV5BOWY0MTRmY2YtMzBlYi00NjlkLThkZWYtMmE2NzJiZmIzODFkXkEyXkFqcGc@._V1_SX300.jpg",
+        "synopsis": "Adonis has been thriving in both his career and family life, but when a childhood friend and former boxing prodigy resurfaces, the face-off is more than just a fight",
+        "rent_price": "5.49",
+        "buy_price": "17.99",
+        "type": "movie"
+      },
+      {
         "id": 1,
         "title": "Inception",
         "poster": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_.jpg",
@@ -45,7 +81,6 @@
         "rent_price": "5.99",
         "buy_price": "19.99",
         "type": "movie"
-        
       },
       {
         "id": 6,
@@ -57,7 +92,7 @@
         "type": "movie"
       },
       {
-        "id": 7,
+        "id": 11,
         "title": "Joker",
         "poster": "https://m.media-amazon.com/images/M/MV5BNGVjNWI4ZGUtNzE0MS00YTJmLWE0ZDctN2ZiYTk2YmI3NTYyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg",
         "synopsis": "The origin story of the Joker, a mentally troubled comedian who turns to a life of crime.",
@@ -66,7 +101,7 @@
         "type": "movie"
       },
       {
-        "id": 8,
+        "id": 12,
         "title": "Black Panther",
         "poster": "https://m.media-amazon.com/images/M/MV5BMTg1MTY2MjYzNV5BMl5BanBnXkFtZTgwMTc4NTMwNDI@._V1_.jpg",
         "synopsis": "T'Challa returns home to Wakanda to assume his place as king but faces challenges from enemies.",
@@ -75,7 +110,7 @@
         "type": "movie"
       },
       {
-        "id": 9,
+        "id": 13,
         "title": "Dune",
         "poster": "https://m.media-amazon.com/images/M/MV5BN2FjNmEyNWMtYzM0ZS00NjIyLTg5YzYtYThlMGVjNzE1OGViXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg",
         "synopsis": "A noble family becomes embroiled in a war for control over the desert planet Arrakis.",
@@ -84,7 +119,7 @@
         "type": "movie"
       },
       {
-        "id": 10,
+        "id": 14,
         "title": "Guardians of the Galaxy",
         "poster": "https://m.media-amazon.com/images/M/MV5BNDIzMTk4NDYtMjg5OS00ZGI0LWJhZDYtMzdmZGY1YWU5ZGNkXkEyXkFqcGdeQXVyMTI5NzUyMTIz._V1_.jpg",
         "synopsis": "A group of intergalactic criminals must pull together to stop a fanatical warrior.",
@@ -93,7 +128,7 @@
         "type": "movie"
       },
       {
-        "id": 11,
+        "id": 15,
         "title": "Avatar: The Way of Water",
         "poster": "https://m.media-amazon.com/images/M/MV5BYjhiNjBlODctY2ZiOC00YjVlLWFlNzAtNTVhNzM1YjI1NzMxXkEyXkFqcGdeQXVyMjQxNTE1MDA@._V1_.jpg",
         "synopsis": "Jake Sully and Neytiri must protect their family as a new threat emerges on Pandora.",
@@ -102,13 +137,93 @@
         "type": "movie"
       },
       {
-        "id": 12,
+        "id": 16,
         "title": "Doctor Strange in the Multiverse of Madness",
         "poster": "https://m.media-amazon.com/images/M/MV5BNWM0ZGJlMzMtZmYwMi00NzI3LTgzMzMtNjMzNjliNDRmZmFlXkEyXkFqcGdeQXVyMTM1MTE1NDMx._V1_.jpg",
         "synopsis": "Doctor Strange explores the Multiverse to confront a new, powerful adversary.",
         "rent_price": "4.99",
         "buy_price": "15.99",
         "type": "movie"
+      },
+      {
+        "id": 17,
+        "title": "Furiosa: A Mad Max Saga",
+        "poster": "https://m.media-amazon.com/images/M/MV5BNTcwYWE1NTYtOWNiYy00NzY3LWIwY2MtNjJmZDkxNDNmOWE1XkEyXkFqcGc@._V1_SX300.jpg",
+        "synopsis": "The origin story of Furiosa, a fierce warrior in the post-apocalyptic wasteland of Mad Max.",
+        "rent_price": "5.99",
+        "buy_price": "19.99",
+        "type": "movie",
+        "year": 2024
+      },
+      {
+        "id": 18,
+        "title": "Deadpool 3",
+        "poster": "https://m.media-amazon.com/images/M/MV5BZTk5ODY0MmQtMzA3Ni00NGY1LThiYzItZThiNjFiNDM4MTM3XkEyXkFqcGc@._V1_SX300.jpg",
+        "synopsis": "The Merc with a Mouth returns in this highly anticipated sequel, teaming up with Wolverine for a multiverse adventure.",
+        "rent_price": "6.49",
+        "buy_price": "22.99",
+        "type": "movie",
+        "year": 2024
+      },
+      {
+        "id": 19,
+        "title": "Kingdom of the Planet of the Apes",
+        "poster": "https://m.media-amazon.com/images/M/MV5BZDRlZTc3YTItOTk3Yi00NmU4LWFiOGUtNjgwMDZjNjIzNTU1XkEyXkFqcGc@._V1_SX300.jpg",
+        "synopsis": "The next chapter in the Planet of the Apes saga, exploring the rise of a new ape civilization.",
+        "rent_price": "5.99",
+        "buy_price": "20.99",
+        "type": "movie",
+        "year": 2024
+      },
+      {
+        "id": 20,
+        "title": "Gladiator 2",
+        "poster": "https://m.media-amazon.com/images/M/MV5BYWQ4YmNjYjEtOWE1Zi00Y2U4LWI4NTAtMTU0MjkxNWQ1ZmJiXkEyXkFqcGc@._V1_SX300.jpg",
+        "synopsis": "The sequel to the epic historical drama, following the legacy of Maximus in ancient Rome.",
+        "rent_price": "6.99",
+        "buy_price": "24.99",
+        "type": "movie",
+        "year": 2024
+      },
+      {
+        "id": 21,
+        "title": "Mission: Impossible 8",
+        "poster": "https://m.media-amazon.com/images/M/MV5BN2U4OTdmM2QtZTkxYy00ZmQyLTg2N2UtMDdmMGJmNDhlZDU1XkEyXkFqcGc@._V1_SX300.jpg",
+        "synopsis": "Ethan Hunt and his team face their most dangerous mission yet, with global stakes and personal sacrifices.",
+        "rent_price": "5.99",
+        "buy_price": "21.99",
+        "type": "movie",
+        "year": 2024
+      },
+      {
+        "id": 22,
+        "title": "Beetlejuice 2",
+        "poster": "https://m.media-amazon.com/images/M/MV5BNTFkNTVlYmMtMWY3ZS00NmJlLWEwNTQtODU4MDJiNTA5OTgzXkEyXkFqcGc@._V1_SX300.jpg",
+        "synopsis": "The long-awaited sequel to the cult classic, bringing back the chaotic and hilarious Beetlejuice.",
+        "rent_price": "4.99",
+        "buy_price": "18.99",
+        "type": "movie",
+        "year": 2024
+      },
+      {
+        "id": 23,
+        "title": "Kraven the Hunter",
+        "poster": "https://m.media-amazon.com/images/M/MV5BZDU0YTI5ODAtN2NmMS00YTg3LTgyNDItN2RmOWEzOTkzZjcyXkEyXkFqcGc@._V1_SX300.jpg",
+        "synopsis": "The origin story of Kraven, one of Spider-Man's most formidable foes, as he hunts down his prey.",
+        "rent_price": "5.49",
+        "buy_price": "19.99",
+        "type": "movie",
+        "year": 2024
+      },
+      {
+        "id": 24,
+        "title": "The Marvels",
+        "poster": "https://m.media-amazon.com/images/M/MV5BYzczOWM4MzItMWMyOS00ZDczLWIxMzctNzBmYTgzOTI1MzI3XkEyXkFqcGc@._V1_SX300.jpg",
+        "synopsis": "Carol Danvers teams up with Monica Rambeau and Kamala Khan to save the universe from a new threat.",
+        "rent_price": "5.99",
+        "buy_price": "20.99",
+        "type": "movie",
+        "year": 2024
       }
     ]
   ,
