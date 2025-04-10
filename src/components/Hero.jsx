@@ -8,7 +8,7 @@ import "../styles.css";
 const Hero = () => {
   const [movies, setMovies] = useState([]);
   const [loading, setLoading] = useState(true);
-
+ 
   useEffect(() => {
     setLoading(true);
     axios

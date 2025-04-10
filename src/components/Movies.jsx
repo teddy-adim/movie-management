@@ -7,7 +7,7 @@ const Movies = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [movies, setMovies] = useState([]);
 
-  const API_BASE_URL = "http://localhost:8080/api/media";
+  const API_BASE_URL = "https://digital-video-store-v1.onrender.com";
 
   // Fetch all movies initially
   useEffect(() => {

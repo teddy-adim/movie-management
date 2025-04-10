@@ -13,7 +13,7 @@ const Register = () => {
 
   const [agree, setAgree] = useState(false);
 
-  const API_BASE_URL = "http://localhost:8080/api";
+  const API_BASE_URL = "https://digital-video-store-v1.onrender.com";
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
