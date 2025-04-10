@@ -10,6 +10,7 @@ import Registration from "./components/Registration";
 import Hero from "./components/Hero";
 import SpotlightBanner from "./components/Spotlight";
 import TVShows from "./components/TVShows";
+import Dashboard from "./components/Dashboard";
 import "./styles.css";
 
 const App = () => {
@@ -30,6 +31,8 @@ const App = () => {
         <Route path="/MovieDetails/:id" element={<MovieDetails />} />
         <Route path="/login" element={<Login />} />
         <Route path ="/register" element={<Registration />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+
       </Routes>
       <Footer />
     </Router>

@@ -1,25 +1,68 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import axios from "axios";
 import "../styles.css";
 
 const Login = () => {
+  const [formData, setFormData] = useState({
+    email: "",
+    password: ""
+  });
+
+  const API_BASE_URL = "http://localhost:8080/api";
+  const navigate = useNavigate();
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const res = await axios.post(`${API_BASE_URL}/customers/login`, formData);
+      const user = res.data;
+
+      // alert("Login successful!");
+
+      // Optionally store user info in localStorage
+      localStorage.setItem("user", JSON.stringify(user));
+
+      // Redirect to home or dashboard
+      navigate("/Dashboard");
+    } catch (error) {
+      console.error("Login failed:", error);
+      alert("Login failed. Check email or password.");
+    }
+  };
+
   return (
     <div className="container">
       <div className="form-container">
-        <h2>Create a New Account</h2>
-        <form className="form">
-          <div className="input-group">
-            <input type="text" placeholder="First name" className="input" required />
-            <input type="text" placeholder="Last name" className="input" required />
-          </div>
-          <input type="email" placeholder="Email" className="input" required />
-          <input type="password" placeholder="Password" className="input" required />
-          <div className="checkbox-container">
-            <input type="checkbox" id="terms" required />
-            <label htmlFor="terms">I certify that I am at least 18 years old and agree to the <Link to="/terms">Terms and Policies</Link> and <Link to="/privacy">Privacy Policy</Link>.</label>
-          </div>
+        <h2>Login to Your Account</h2>
+        <form className="form" onSubmit={handleSubmit}>
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            className="input"
+            value={formData.email}
+            onChange={handleChange}
+            required
+          />
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            className="input"
+            value={formData.password}
+            onChange={handleChange}
+            required
+          />
           <button type="submit" className="button">Login</button>
         </form>
+        <p className="login-link">
+          Don’t have an account? <Link to="/register">Sign up here</Link>
+        </p>
         <div className="social-login">
           <button className="social-button walmart-button">Walmart</button>
           <button className="social-button">Facebook</button>

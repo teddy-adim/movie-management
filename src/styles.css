@@ -155,6 +155,35 @@ a:hover {
   text-align: center;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
+.search-bar-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 2px solid #3a506b;
+  border-radius: 8px;
+  background-color: #1a1a1a;
+  color: white;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+  transition: border-color 0.3s ease;
+}
+
+.search-bar::placeholder {
+  color: #bbb;
+}
+
+.search-bar:focus {
+  border-color: #ffd700;
+  outline: none;
+}
+
+
 
 /* Customize dots position to avoid overlapping with content */
 .slick-dots {
@@ -451,6 +480,33 @@ a:hover {
 .button:hover {
   background-color: #0056b3;
 }
+
+.dashboard-card {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #1f1f1f;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  color: white;
+  text-align: center;
+}
+
+.logout-button {
+  background-color: #e63946;
+  margin-top: 20px;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background-color: #c9303e;
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {

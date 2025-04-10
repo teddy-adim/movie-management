@@ -4,60 +4,54 @@ import axios from "axios";
 import "../styles.css";
 
 const Home = () => {
-    const [movies, setMovies] = useState([]);
-    const [tvShows, setTvShows] = useState([]);
+  const [movies, setMovies] = useState([]);
+  const [tvShows, setTvShows] = useState([]);
 
-    const API_BASE_URL = "https://67c1155b61d8935867e1d939.mockapi.io"
+  const API_BASE_URL = "http://localhost:8080/api";
+
   useEffect(() => {
-    axios.get(`${API_BASE_URL}/movies`).then((response) => {
-        setMovies(response.data.slice(0, 6)); // Display only 6 featured movies
-      });
-    // axios.get("http://localhost:3000/movies").then((response) => {
-    //   setMovies(response.data.slice(0, 6)); // Display only 6 featured movies
-    // });
+    // Fetch featured movies
+    axios.get(`${API_BASE_URL}/media?type=movie`)
 
-    // axios.get("http://localhost:3000/tvshows").then((response) => {
-    //     setTvShows(response.data.slice(0, 6)); // Display 4-6 featured TV shows
-    //   });
+      .then((response) => setMovies(response.data.slice(0, 6)))
+      .catch((error) => console.error("Error fetching featured movies:", error));
 
-      axios.get(`${API_BASE_URL}/tvshows`).then((response) => {
-        setTvShows(response.data.slice(0, 6)); // Display 4-6 featured TV shows
-      });
+    // Fetch featured TV shows
+    axios.get(`${API_BASE_URL}/media/featured?type=tvshow`)
+      .then((response) => setTvShows(response.data.slice(0, 6)))
+      .catch((error) => console.error("Error fetching featured TV shows:", error));
   }, []);
-
 
   return (
     <div className="hero-featured-container">
-    
-    <section className="featured-movies">
-      <h2>Featured Movies</h2>
-      <div className="movie-grid">
-        {movies.map((movie) => (
-          <div key={movie.id} className="movie-item">
-            <img src={movie.poster} alt={movie.title} className="movie-poster" />
-             <Link to={`/MovieDetails/${movie.id}?type=${movie.type}`}>
-             <p>{movie.title}</p>
-             </Link>
-          </div>
-        ))}
-      </div>
-    </section>
-
-
-    <section className="featured-tvshows">
-        <h2>Featured TV Shows</h2>
+      <section className="featured-movies">
+        <h2>Featured Movies</h2>
         <div className="movie-grid">
-          {tvShows.map((show) => (
-            <div key={show.id} className="movie-item">
-              <img src={show.poster} alt={show.title} className="movie-poster" />
-              <Link to={`/MovieDetails/${show.id}?type=${show.type}`}>
-             <p>{show.title}</p>
-             </Link>
+          {movies.map((movie) => (
+            <div key={movie.id} className="movie-item">
+              <img src={movie.smallPoster} alt={movie.title} className="movie-poster" />
+              <Link to={`/MovieDetails/${movie.id}?type=${movie.type}`}>
+                <p>{movie.title}</p>
+              </Link>
             </div>
           ))}
         </div>
       </section>
-  </div>
+
+      <section className="featured-tvshows">
+        <h2>Featured TV Shows</h2>
+        <div className="movie-grid">
+          {tvShows.map((show) => (
+            <div key={show.id} className="movie-item">
+              <img src={show.smallPoster} alt={show.title} className="movie-poster" />
+              <Link to={`/MovieDetails/${show.id}?type=${show.type}`}>
+                <p>{show.title}</p>
+              </Link>
+            </div>
+          ))}
+        </div>
+      </section>
+    </div>
   );
 };
 
