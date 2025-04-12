@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import SuccessModal from "./SuccessModal";  // Adjust path as needed
 import axios from "axios";
-import "../styles.css";
 
 const Register = () => {
   const [formData, setFormData] = useState({
@@ -12,6 +11,7 @@ const Register = () => {
   });
 
   const [agree, setAgree] = useState(false);
+  const [showModal, setShowModal] = useState(false); // State to control modal visibility
 
   const API_BASE_URL = "https://digital-video-store-v1.onrender.com";
 
@@ -27,8 +27,8 @@ const Register = () => {
     }
 
     try {
-      const res = await axios.post(`${API_BASE_URL}/customers/register`, formData);
-      alert("Registration successful!");
+      const res = await axios.post(`${API_BASE_URL}/api/customers/register`, formData);
+      setShowModal(true); // Show modal after successful registration
       setFormData({ firstName: "", lastName: "", email: "", password: "" });
       setAgree(false);
     } catch (error) {
@@ -90,8 +90,8 @@ const Register = () => {
             />
             <label htmlFor="terms">
               I certify that I am at least 18 years old and agree to the{" "}
-              <Link to="/terms">Terms and Policies</Link> and{" "}
-              <Link to="/privacy">Privacy Policy</Link>.
+              <a href="/terms">Terms and Policies</a> and{" "}
+              <a href="/privacy">Privacy Policy</a>.
             </label>
           </div>
           <button type="submit" className="button">
@@ -99,13 +99,12 @@ const Register = () => {
           </button>
         </form>
         <p className="login-link">
-          Already have an account? <Link to="/login">Sign in here</Link>
+          Already have an account? <a href="/login">Sign in here</a>
         </p>
-        <div className="social-login">
-          <button className="social-button walmart-button">Walmart</button>
-          <button className="social-button">Facebook</button>
-        </div>
       </div>
+      {showModal && (
+        <SuccessModal message="Registration successful!" onClose={() => setShowModal(false)} />
+      )}
     </div>
   );
 };

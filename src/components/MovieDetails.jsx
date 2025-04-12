@@ -7,7 +7,7 @@ const MovieDetails = () => {
   const { id } = useParams();
   const [item, setItem] = useState(null);
 
-  const API_BASE_URL = "https://digital-video-store-v1.onrender.com";
+  const API_BASE_URL = "https://digital-video-store-v1.onrender.com/api";
 
   useEffect(() => {
     axios

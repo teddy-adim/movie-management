@@ -7,7 +7,7 @@ const Home = () => {
   const [movies, setMovies] = useState([]);
   const [tvShows, setTvShows] = useState([]);
 
-  const API_BASE_URL = "https://digital-video-store-v1.onrender.com";
+  const API_BASE_URL = "https://digital-video-store-v1.onrender.com/api";
 
   useEffect(() => {
     // Fetch featured movies

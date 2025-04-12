@@ -507,6 +507,13 @@ a:hover {
   background-color: #c9303e;
 }
 
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+
 
 /* Responsive Design */
 @media (max-width: 768px) {

@@ -7,7 +7,7 @@ const TVShows = () => {
   const [tvShows, setTvShows] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
 
-  const API_BASE_URL = "https://digital-video-store-v1.onrender.com";
+  const API_BASE_URL = "https://digital-video-store-v1.onrender.com/api/media";
 
   // Fetch all TV shows initially
   useEffect(() => {
