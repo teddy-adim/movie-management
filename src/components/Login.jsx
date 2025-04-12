@@ -22,12 +22,9 @@ const Login = () => {
       const res = await axios.post(`${API_BASE_URL}/api/customers/login`, formData);
       const user = res.data;
 
-      // alert("Login successful!");
-
-      // Optionally store user info in localStorage
+      
       localStorage.setItem("user", JSON.stringify(user));
 
-      // Redirect to home or dashboard
       navigate("/Dashboard");
     } catch (error) {
       console.error("Login failed:", error);
